@@ -58,7 +58,7 @@ void LASAalloc::display_node(struct block *p)
 		cout << "Prev: " << p->prev_block;
 		cout << "\tNext: " << p->next_block;
 		cout << "\tFree: " << p->freeFlag;
-		cout << "\tSize: " << p->info;
+		cout << "\tSize: " << p->size;
 		cout << "\tThis: " << p->this_block_data << endl;
 		cout << endl;	
 }

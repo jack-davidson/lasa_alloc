@@ -21,7 +21,7 @@ struct block
 	struct block *next_block;
 	int size;
 	bool	freeFlag;					//Wasteful of memory but simple (in reality a bit field)
-	struct void *this_block_data;
+	void *this_block_data;
 };
 
 
