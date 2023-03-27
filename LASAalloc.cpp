@@ -86,17 +86,7 @@ void LASAalloc::display(struct block *begin)
 
 void* LASAalloc::lalloc(int size)
 {
-    block *b;
-    
-    for (block *i = freeList; i->next_block; i = i->next_block) {
-        /* Free block that is at least (size + header) bytes large. */
-        if (i->freeFlag && (i->size >= size+32)) {
-            b = i;
-            break;
-        }
-    }
 
-    return b+32;
 }
 
 
